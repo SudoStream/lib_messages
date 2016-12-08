@@ -1,0 +1,37 @@
+{
+ "type": "record",
+ "name": "GeneratedTestsEvent",
+ "namespace" : "io.sudostream.api_event_horizon.messages",
+ "fields": [
+     {"name": "apiTitle", "type": "string"},
+     {"name": "apiDescription",  "type": ["string", "null"]},
+     {"name": "apiVersion", "type": ["string", "null"]},
+     {"name": "hostname", "type": "string"},
+     {"name": "basepath", "type": ["string", "null"]},
+     {"name": "schemes", "type" :
+        {"type": "array", "items": "string"}
+     },
+     {"name": "ports", "type" :
+        {"type" : "array", "items": "int"}
+     },
+     {"name" : "generatedTests", "type" :
+        {
+            "type" : "array", "items" :
+            {
+                "type" : "record",
+                "name" : "TestDescription",
+                "fields" : [
+                    {"name" : "uriPath", "type": "string"},
+                    {"name": "method", "type":
+                        { "name" : "HttpMethod", "type" : "enum", "symbols" : ["DELETE", "GET", "POST", "PUT"]}
+                    },
+                    {"name" : "documentedReturnCodes", "type" :
+                        {"type": "array", "items": "int"}
+                    }
+                ]
+            }
+        }
+     }
+ ]
+}
+
