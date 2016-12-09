@@ -13,7 +13,7 @@ resolvers += "Typesafe Repo" at "http://repo.typesafe.com/typesafe/releases/"
 libraryDependencies ++= Seq(
   "org.apache.avro" % "avro" % "1.8.1",
 
-
+  // test
   "org.scalatest" %% "scalatest" % "2.2.4" % "test"
 )
 
