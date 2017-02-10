@@ -1,6 +1,6 @@
 {
  "type": "record",
- "name": "GeneratedTestsEvent",
+ "name": "SpeculativeScreenPlay",
  "namespace" : "io.sudostream.api_event_horizon.messages",
  "fields": [
      {"name": "apiTitle", "type": "string"},
