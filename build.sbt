@@ -1,8 +1,8 @@
-name := """aeh-messages"""
+name := """messages"""
 
-organization := "io.sudostream.api-event-horizon"
+organization := "io.sudostream.api-antagonist"
 
-version := "1.0.0-SNAPSHOT"
+version := "0.0.1-SNAPSHOT"
 
 scalaVersion := "2.11.7"
 

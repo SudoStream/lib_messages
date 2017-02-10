@@ -1,9 +1,9 @@
-package io.sudostream.api_event_horizon.kafka.serialising
+package io.sudostream.api_antagonist.kafka.serialising
 
 import java.io.{ByteArrayInputStream, InputStream}
 import java.util
 
-import io.sudostream.api_event_horizon.messages.SpeculativeScreenplay
+import io.sudostream.api_antagonist.messages.SpeculativeScreenplay
 import org.apache.avro.io.DecoderFactory
 import org.apache.avro.specific.SpecificDatumReader
 import org.apache.kafka.common.serialization.Deserializer

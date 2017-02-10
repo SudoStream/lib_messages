@@ -1,7 +1,7 @@
 {
  "type": "record",
  "name": "SpeculativeScreenplay",
- "namespace" : "io.sudostream.api_event_horizon.messages",
+ "namespace" : "io.sudostream.api_antagonist.messages",
  "fields": [
      {"name": "apiTitle", "type": "string"},
      {"name": "apiDescription",  "type": ["string", "null"]},

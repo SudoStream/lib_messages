@@ -1,4 +1,4 @@
-package io.sudostream.api_event_horizon.messages
+package io.sudostream.api_antagonist.messages
 
 import org.scalatest.FunSuite
 
