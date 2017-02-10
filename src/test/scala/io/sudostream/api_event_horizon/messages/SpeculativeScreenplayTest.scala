@@ -2,14 +2,14 @@ package io.sudostream.api_event_horizon.messages
 
 import org.scalatest.FunSuite
 
-class GeneratedTestsEventTest extends FunSuite {
+class SpeculativeScreenplayTest extends FunSuite {
 
   test("Lets play with avro") {
 
     val aSingleTestDescription = TestDescription("/stars", HttpMethod.GET, List(200))
 
-    val generatedEvent =
-      SpeculativeScreenPlay(
+    val speculativeScreenplay =
+      SpeculativeScreenplay(
         "apiTitle",
         Some("apiDesc"),
         Some("v1"),
@@ -20,7 +20,7 @@ class GeneratedTestsEventTest extends FunSuite {
         List(aSingleTestDescription)
       )
 
-    println("Hey Ho ... \n" + generatedEvent)
+    println("Hey Ho ... \n" + speculativeScreenplay)
 
   }
 
