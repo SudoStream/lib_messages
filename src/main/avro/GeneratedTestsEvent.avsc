@@ -14,12 +14,12 @@
      {"name": "ports", "type" :
         {"type" : "array", "items": "int"}
      },
-     {"name" : "templateInterrogationOfAntagonist", "type" :
+     {"name" : "theAntagonistInterrogation", "type" :
         {
             "type" : "array", "items" :
             {
                 "type" : "record",
-                "name" : "TestDescription",
+                "name" : "HttpQuestionForTheProtagonistAPI",
                 "fields" : [
                     {"name" : "uriPath", "type": "string"},
                     {"name": "method", "type":
