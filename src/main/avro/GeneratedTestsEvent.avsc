@@ -1,6 +1,6 @@
 {
  "type": "record",
- "name": "SpeculativeScreenPlay",
+ "name": "SpeculativeScreenplay",
  "namespace" : "io.sudostream.api_event_horizon.messages",
  "fields": [
      {"name": "apiTitle", "type": "string"},
@@ -14,7 +14,7 @@
      {"name": "ports", "type" :
         {"type" : "array", "items": "int"}
      },
-     {"name" : "generatedTests", "type" :
+     {"name" : "templateInterrogationOfAntagonist", "type" :
         {
             "type" : "array", "items" :
             {
