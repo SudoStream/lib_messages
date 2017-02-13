@@ -38,7 +38,7 @@ class GreenlitTest extends FunSuite {
     dataFileWriter.append(greenlitFilm)
     dataFileWriter.close()
 
-    // Deserialize  from disk
+    // Deserialize from disk
     val speculativeScreenplayDatumReader: DatumReader[GreenlitFilm] = new SpecificDatumReader[GreenlitFilm](greenlitFilm.getSchema)
     val dataFileReader: DataFileReader[GreenlitFilm] =
       new DataFileReader[GreenlitFilm](new File("greenlitFilm.avro"), speculativeScreenplayDatumReader)
