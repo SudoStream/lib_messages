@@ -1,0 +1,14 @@
+{
+ "type": "record",
+ "name": "GreenlitFilm",
+ "namespace" : "io.sudostream.api_antagonist.messages",
+ "fields": [
+     {"name": "filmTitle", "type": "string"},
+     {"name": "filmGenres", "type" :
+        { "name" : "FilmGenre", "type" : "enum", "symbols" : ["ROMANCE", "SAGA", "PARANOID"]}
+     },
+     {"name": "filmUuid", "type": "string"},
+     {"name":"speculativeScreenplay", "type": "io.sudostream.api_antagonist.messages.SpeculativeScreenplay" }
+ ]
+}
+
