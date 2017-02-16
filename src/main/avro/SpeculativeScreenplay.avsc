@@ -1,37 +1,37 @@
 {
- "type": "record",
- "name": "SpeculativeScreenplay",
- "namespace" : "io.sudostream.api_antagonist.messages",
- "fields": [
-     {"name": "apiTitle", "type": "string"},
-     {"name": "apiDescription",  "type": ["string", "null"]},
-     {"name": "apiVersion", "type": ["string", "null"]},
-     {"name": "hostname", "type": "string"},
-     {"name": "basepath", "type": ["string", "null"]},
-     {"name": "schemes", "type" :
-        {"type": "array", "items": "string"}
-     },
-     {"name": "ports", "type" :
-        {"type" : "array", "items": "int"}
-     },
-     {"name" : "theAntagonistInterrogation", "type" :
+    "type": "record",
+    "name": "SpeculativeScreenplay",
+    "namespace": "io.sudostream.api_antagonist.messages",
+    "fields": [
+        {"name": "apiTitle", "type": "string"},
+        {"name": "apiDescription", "type": ["string", "null"]},
+        {"name": "apiVersion", "type": ["string", "null"]},
+        {"name": "hostname", "type": "string"},
+        {"name": "basepath", "type": ["string", "null"]},
         {
-            "type" : "array", "items" :
-            {
-                "type" : "record",
-                "name" : "HttpQuestionForTheProtagonistAPI",
-                "fields" : [
-                    {"name" : "uriPath", "type": "string"},
-                    {"name": "method", "type":
-                        { "name" : "HttpMethod", "type" : "enum", "symbols" : ["DELETE", "GET", "POST", "PUT"]}
+            "name": "schemes", "type": {"type": "array", "items": "string"}
+        },
+        {
+            "name": "ports", "type": {"type": "array", "items": "int"}
+        },
+        {
+            "name": "theAntagonistInterrogation", "type": {
+            "type": "array", "items": {
+                "type": "record",
+                "name": "HttpQuestionForTheProtagonistAPI",
+                "fields": [
+                    {"name": "uriPath", "type": "string"},
+                    {
+                        "name": "method",
+                        "type": {"name": "HttpMethod", "type": "enum", "symbols": ["DELETE", "GET", "POST", "PUT"]}
                     },
-                    {"name" : "documentedReturnCodes", "type" :
-                        {"type": "array", "items": "int"}
+                    {
+                        "name": "documentedReturnCodes", "type": {"type": "array", "items": "int"}
                     }
                 ]
             }
         }
-     }
- ]
+        }
+    ]
 }
 

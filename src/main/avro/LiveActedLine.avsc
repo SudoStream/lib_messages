@@ -1,0 +1,17 @@
+{
+    "type": "record",
+    "name": "LiveActedLine",
+    "namespace": "io.sudostream.api_antagonist.messages",
+    "fields": [
+        {"name": "filmUuid", "type": "string"},
+        {"name": "finalScriptUuid", "type": "string"},
+        {"name": "uriTested", "type": "string"},
+        {"name": "responseCodeActual", "type": "int"},
+        {"name": "responseBodyActual", "type": "string"},
+        {"name": "responseMilliseconds", "type": "long"},
+        {"name": "responseCodeExpected", "type": "int"},
+        {"name": "responseBodyExpected", "type": "string"},
+        {"name": "responseMillisecondsSla", "type": "long"}
+    ]
+}
+

@@ -1,41 +1,40 @@
 {
- "type": "record",
- "name": "FinalScript",
- "namespace" : "io.sudostream.api_antagonist.messages",
- "fields": [
-     {"name": "finalScriptName", "type": "string"},
-     {"name": "filmUuid", "type": "string"},
-     {"name": "finalScriptUuid", "type": "string"},
-     {"name": "antagonistLines", "type" :
-              {
-                  "type" : "array", "items" :
-                  {
-                      "type" : "record",
-                      "name" : "HttpRequest",
-                      "fields" : [
-                          {"name": "method", "type": "io.sudostream.api_antagonist.messages.HttpMethod" },
-                          {"name" : "uriPath", "type": "string"},
-                          {"name" : "httpHeaders", "type" :
-                                {
-                                    "type" : "array", "items" :
-                                    {
-                                        "type" : "record",
-                                        "name" : "HttpHeader",
-                                        "fields" : [
-                                            {"name" : "fieldName", "type": "string"},
-                                            {"name" : "fieldValue", "type" : "string"}
-                                        ]
-                                    }
-                                }
-                          },
-                          {"name" : "entity", "type": "string" },
-                          {"name" : "documentedReturnCodes", "type" :
-                              {"type": "array", "items": "int"}
-                          }
-                      ]
-                  }
-              }
-     }
- ]
+    "type": "record",
+    "name": "FinalScript",
+    "namespace": "io.sudostream.api_antagonist.messages",
+    "fields": [
+        {"name": "finalScriptName", "type": "string"},
+        {"name": "filmUuid", "type": "string"},
+        {"name": "finalScriptUuid", "type": "string"},
+
+        {
+            "name": "antagonistLines", "type": {
+            "type": "array", "items": {
+                "type": "record",
+                "name": "HttpRequest",
+                "fields": [
+                    {"name": "method", "type": "io.sudostream.api_antagonist.messages.HttpMethod"},
+                    {"name": "uriPath", "type": "string"},
+                    {
+                        "name": "httpHeaders", "type": {
+                        "type": "array", "items": {
+                            "type": "record",
+                            "name": "HttpHeader",
+                            "fields": [
+                                {"name": "fieldName", "type": "string"},
+                                {"name": "fieldValue", "type": "string"}
+                            ]
+                        }
+                    }
+                    },
+                    {"name": "entity", "type": "string"},
+                    {
+                        "name": "documentedReturnCodes", "type": {"type": "array", "items": "int"}
+                    }
+                ]
+            }
+        }
+        }
+    ]
 }
 

@@ -1,10 +1,22 @@
 name := """messages"""
-
 organization := "io.sudostream.api-antagonist"
-
-version := "0.0.4"
+version := "0.0.5"
 
 scalaVersion := "2.11.7"
+scalacOptions ++= Seq(
+  "-unchecked",
+  "-deprecation",
+  "-feature",
+  "-language:existentials",
+  "-language:higherKinds",
+  "-language:implicitConversions",
+  "-language:postfixOps",
+  "-Ywarn-dead-code",
+  "-Ywarn-infer-any",
+  "-Ywarn-unused-import",
+  "-Xfatal-warnings",
+  "-Xlint",
+  "-encoding", "utf8")
 
 sbtavrohugger.SbtAvrohugger.specificAvroSettings
 
@@ -17,4 +29,5 @@ libraryDependencies ++= Seq(
   // test
   "org.scalatest" %% "scalatest" % "2.2.4" % "test"
 )
+
 
