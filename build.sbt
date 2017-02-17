@@ -1,8 +1,10 @@
 name := """messages"""
 organization := "io.sudostream.api-antagonist"
-version := "0.0.5"
+version := "0.0.7"
 
 scalaVersion := "2.11.7"
+ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true)}
+
 scalacOptions ++= Seq(
   "-unchecked",
   "-deprecation",
