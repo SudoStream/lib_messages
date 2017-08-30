@@ -28,13 +28,33 @@ class ScottishEsAndOsTest extends FunSuite {
       "Senior" -> "phase S4 to S6, and college or other means of study"
     )
 
+    val curriculumAreas = List(
+      CurriculumArea(
+        curriculumAreaName = "Health And Wellbeing",
+        principlesAndPractice = List(
+          PrincipleAndPracticeParagraph("DEFAULT",
+            "Curriculum for Excellence has an important role to play in promoting the health and wellbeing of" +
+              " children and young people and of all of those in the educational communities to which they belong. " +
+              "This paper is intended\nto support discussion and planning between practitioners in all sectors" +
+              " and services and in local authorities. "),
+          PrincipleAndPracticeParagraph("What are the main purposes of learning in health and wellbeing?",
+            "Learning in health and wellbeing ensures that children and young people develop the knowledge" +
+              " and understanding, skills, capabilities and attributes which they need for mental, emotional," +
+              " social and physical wellbeing now and in the future. ")
+        )
+      )
+    )
+
     val esAndOs = ScottishEsAndOs(
       introductionParagraphs,
-      mapOfLevelsToStage
+      mapOfLevelsToStage,
+      curriculumAreas
     )
 
     assert(esAndOs.introduction.head.text == introductionText)
     assert(esAndOs.mapCurriculumLevelsToStage("Second") == "To the end of P7, but earlier or later for some.")
+    assert(esAndOs.curriculumAreas.head.curriculumAreaName == "Health And Wellbeing")
+    assert(esAndOs.curriculumAreas.head.principlesAndPractice.size == 2)
   }
 
 }

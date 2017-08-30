@@ -19,6 +19,31 @@
         {
             "name": "mapCurriculumLevelsToStage",
             "type": {"type": "map", "values": "string"}
+        },
+        {
+            "name": "curriculumAreas",
+            "type": {
+                "type": "array", "items": {
+                    "type": "record",
+                    "name": "CurriculumArea",
+                    "fields": [
+                        {"name": "curriculumAreaName", "type": "string"},
+                        {
+                            "name": "principlesAndPractice",
+                            "type": {
+                                "type": "array", "items": {
+                                    "type": "record",
+                                    "name": "PrincipleAndPracticeParagraph",
+                                    "fields": [
+                                        {"name": "header", "type": "string"},
+                                        {"name": "text", "type": "string"}
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
         }
     ]
 }
