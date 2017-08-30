@@ -35,7 +35,7 @@ class ScottishEsAndOsTest extends FunSuite {
           PrincipleAndPracticeParagraph("DEFAULT",
             "Curriculum for Excellence has an important role to play in promoting the health and wellbeing of" +
               " children and young people and of all of those in the educational communities to which they belong. " +
-              "This paper is intended\nto support discussion and planning between practitioners in all sectors" +
+              "This paper is intended to support discussion and planning between practitioners in all sectors" +
               " and services and in local authorities. "),
           PrincipleAndPracticeParagraph("What are the main purposes of learning in health and wellbeing?",
             "Learning in health and wellbeing ensures that children and young people develop the knowledge" +
