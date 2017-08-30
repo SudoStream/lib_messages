@@ -1,0 +1,21 @@
+{
+    "type": "record",
+    "name": "ScottishEsAndOs",
+    "namespace": "io.sudostream.timetoteach.messages",
+    "fields": [
+        {
+            "name": "introduction",
+            "type": {
+                "type": "array", "items": {
+                    "type": "record",
+                    "name": "EsAndOsIntroductionParagraph",
+                    "fields": [
+                        {"name": "header", "type": "string"},
+                        {"name": "text", "type": "string"}
+                    ]
+                }
+            }
+        }
+    ]
+}
+
