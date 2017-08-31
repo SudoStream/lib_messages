@@ -23,5 +23,4 @@ class ScottishEsAndOsDeserializer extends Deserializer[ScottishEsAndOs] {
 
   override def close(): Unit = {}
 
-
 }
