@@ -8,7 +8,7 @@ import org.apache.avro.io.{DatumWriter, EncoderFactory}
 import org.apache.avro.specific.SpecificDatumWriter
 import org.apache.kafka.common.serialization.Serializer
 
-class ScottishEsAndOsSerializer extends Serializer[ScottishEsAndOsDocument] {
+class ScottishEsAndOsDocumentSerializer extends Serializer[ScottishEsAndOsDocument] {
 
   override def configure(configs: util.Map[String, _], isKey: Boolean): Unit = {}
 
