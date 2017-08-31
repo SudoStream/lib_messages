@@ -48,53 +48,79 @@
                                     "type": "record",
                                     "name": "EAndOSet",
                                     "fields": [
-                                        {"name": "EAndOSetName", "type": "string"},
+                                        {"name": "eAndOSetName", "type": "string"},
                                         {
                                             "name": "eAndOSetSection",
                                             "type": {
-                                                "type": "record",
-                                                "name": "EAndOSetSection",
-                                                "fields": [
-                                                    {"name": "eAndOSetSectionName", "type": "string"},
-                                                    {
-                                                        "name": "eAndOSetSubSection",
-                                                        "type": {
-                                                            "type": "record",
-                                                            "name": "EAndOSetSubSection",
-                                                            "fields": [
-                                                                {"name": "EAndOSetSubSectionName", "type": "string"},
-                                                                {
-                                                                    "name": "experienceAndOutcomeStatement",
-                                                                    "type": {
-                                                                        "type": "record",
-                                                                        "name": "ExperienceAndOutcomeStatement",
-                                                                        "fields": [
-                                                                            {"name": "eAndOCode", "type": "string"},
-                                                                            {"name": "eAndOText", "type": "string"},
-                                                                            {
-                                                                                "name": "stage",
-                                                                                "type": {
-                                                                                    "type": "array", "items": {
-                                                                                        "type": "enum",
-                                                                                        "name": "CurriculumLevel",
-                                                                                        "symbols": [
-                                                                                            "EARLY",
-                                                                                            "FIRST",
-                                                                                            "SECOND",
-                                                                                            "THIRD",
-                                                                                            "FOURTH"]
-                                                                                    }
+                                                "type": "array", "items": {
+                                                    "type": "record",
+                                                    "name": "EAndOSetSection",
+                                                    "fields": [
+                                                        {"name": "eAndOSetSectionName", "type": "string"},
+                                                        {
+                                                            "name": "eAndOSetSubSection",
+                                                            "type": {
+                                                                "type": "array", "items": {
+                                                                    "type": "record",
+                                                                    "name": "EAndOSetSubSection",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "eAndOSetSubSectionName",
+                                                                            "type": "string"
+                                                                        },
+                                                                        {
+                                                                            "name": "experienceAndOutcomeStatements",
+                                                                            "type": {
+                                                                                "type": "array", "items": {
+                                                                                    "type": "record",
+                                                                                    "name": "ExperienceAndOutcomeStatement",
+                                                                                    "fields": [
+                                                                                        {
+                                                                                            "name": "eAndOText",
+                                                                                            "type": "string"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "stage",
+                                                                                            "type": {
+                                                                                                "type": "array",
+                                                                                                "items": {
+                                                                                                    "type": "record",
+                                                                                                    "name": "CurriculumCodeAndLevel",
+                                                                                                    "fields": [
+                                                                                                        {
+                                                                                                            "name": "eAndOCode",
+                                                                                                            "type": "string"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "name": "curriculumLevel",
+                                                                                                            "type": {
+                                                                                                                "type": "enum",
+                                                                                                                "name": "CurriculumLevel",
+                                                                                                                "symbols": [
+                                                                                                                    "EARLY",
+                                                                                                                    "FIRST",
+                                                                                                                    "SECOND",
+                                                                                                                    "THIRD",
+                                                                                                                    "FOURTH"
+                                                                                                                ]
+                                                                                                            }
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    ]
                                                                                 }
                                                                             }
-                                                                        ]
-                                                                    }
+                                                                        }
+                                                                    ]
                                                                 }
-                                                            ]
-                                                        }
-                                                    }
-                                                ]
-                                            }
+                                                            }
 
+                                                        }
+                                                    ]
+                                                }
+                                            }
                                         }
                                     ]
                                 }
@@ -106,4 +132,3 @@
         }
     ]
 }
-
