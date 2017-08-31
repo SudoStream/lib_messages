@@ -3,20 +3,20 @@ package io.sudostream.timetoteach.kafka.serializing
 import java.io.{ByteArrayInputStream, InputStream}
 import java.util
 
-import io.sudostream.timetoteach.messages.ScottishEsAndOs
+import io.sudostream.timetoteach.messages.ScottishEsAndOsDocument
 import org.apache.avro.io.DecoderFactory
 import org.apache.avro.specific.SpecificDatumReader
 import org.apache.kafka.common.serialization.Deserializer
 
-class ScottishEsAndOsDeserializer extends Deserializer[ScottishEsAndOs] {
+class ScottishEsAndOsDeserializer extends Deserializer[ScottishEsAndOsDocument] {
 
   override def configure(configs: util.Map[String, _], isKey: Boolean): Unit = {}
 
-  override def deserialize(topic: String, data: Array[Byte]): ScottishEsAndOs = {
-    val reader = new SpecificDatumReader[ScottishEsAndOs](ScottishEsAndOs.SCHEMA$)
+  override def deserialize(topic: String, data: Array[Byte]): ScottishEsAndOsDocument = {
+    val reader = new SpecificDatumReader[ScottishEsAndOsDocument](ScottishEsAndOsDocument.SCHEMA$)
     val in: InputStream = new ByteArrayInputStream(data)
     val decoder: org.apache.avro.io.Decoder = new DecoderFactory().binaryDecoder(in, null)
-    val outVersion = new ScottishEsAndOs()
+    val outVersion = new ScottishEsAndOsDocument()
     reader.read(outVersion, decoder)
     outVersion
   }

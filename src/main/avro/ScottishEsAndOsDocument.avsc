@@ -1,6 +1,6 @@
 {
     "type": "record",
-    "name": "ScottishEsAndOs",
+    "name": "ScottishEsAndOsDocument",
     "namespace": "io.sudostream.timetoteach.messages",
     "fields": [
         {

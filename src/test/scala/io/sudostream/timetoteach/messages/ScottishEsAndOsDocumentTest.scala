@@ -3,9 +3,9 @@ package io.sudostream.timetoteach.messages
 
 import org.scalatest.FunSuite
 
-class ScottishEsAndOsTest extends FunSuite {
+class ScottishEsAndOsDocumentTest extends FunSuite {
 
-  test("Basic ScottishEsAndOsTest") {
+  test("Basic ScottishEsAndOsDocumentTest") {
     val introductionText = "This material is for all who contribute to the education of Scotland’s children and young people. The" +
       "experiences and outcomes apply wherever learning is planned. "
 
@@ -86,7 +86,7 @@ class ScottishEsAndOsTest extends FunSuite {
       )
     )
 
-    val esAndOs = ScottishEsAndOs(
+    val esAndOs = ScottishEsAndOsDocument(
       introductionParagraphs,
       mapOfLevelsToStage,
       curriculumAreas
