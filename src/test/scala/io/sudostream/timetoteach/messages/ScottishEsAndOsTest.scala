@@ -21,11 +21,11 @@ class ScottishEsAndOsTest extends FunSuite {
     )
 
     val mapOfLevelsToStage = Map(
-      "Early" -> "The pre-school years and P1, or later for some.",
-      "First" -> "To the end of P4, but earlier or later for some.",
-      "Second" -> "To the end of P7, but earlier or later for some.",
-      "Third" -> "and Fourth S1 to S3, but earlier for some. The fourth level broadly equates to SCQF level 4.",
-      "Senior" -> "phase S4 to S6, and college or other means of study"
+      "EEARLY" -> "The pre-school years and P1, or later for some.",
+      "FIRST" -> "To the end of P4, but earlier or later for some.",
+      "SECOND" -> "To the end of P7, but earlier or later for some.",
+      "THIRD" -> "and Fourth S1 to S3, but earlier for some. The fourth level broadly equates to SCQF level 4.",
+      "FOURTH" -> "phase S4 to S6, and college or other means of study"
     )
 
     val curriculumAreas = List(

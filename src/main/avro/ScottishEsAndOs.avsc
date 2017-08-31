@@ -40,6 +40,65 @@
                                     ]
                                 }
                             }
+                        },
+                        {
+                            "name": "eAndOSet",
+                            "type": {
+                                "type": "array", "items": {
+                                    "type": "record",
+                                    "name": "EAndOSet",
+                                    "fields": [
+                                        {"name": "EAndOSetName", "type": "string"},
+                                        {
+                                            "name": "eAndOSetSection",
+                                            "type": {
+                                                "type": "record",
+                                                "name": "EAndOSetSection",
+                                                "fields": [
+                                                    {"name": "eAndOSetSectionName", "type": "string"},
+                                                    {
+                                                        "name": "eAndOSetSubSection",
+                                                        "type": {
+                                                            "type": "record",
+                                                            "name": "EAndOSetSubSection",
+                                                            "fields": [
+                                                                {"name": "EAndOSetSubSectionName", "type": "string"},
+                                                                {
+                                                                    "name": "experienceAndOutcomeStatement",
+                                                                    "type": {
+                                                                        "type": "record",
+                                                                        "name": "ExperienceAndOutcomeStatement",
+                                                                        "fields": [
+                                                                            {"name": "eAndOCode", "type": "string"},
+                                                                            {"name": "eAndOText", "type": "string"},
+                                                                            {
+                                                                                "name": "stage",
+                                                                                "type": {
+                                                                                    "type": "array", "items": {
+                                                                                        "type": "enum",
+                                                                                        "name": "CurriculumLevel",
+                                                                                        "symbols": [
+                                                                                            "EARLY",
+                                                                                            "FIRST",
+                                                                                            "SECOND",
+                                                                                            "THIRD",
+                                                                                            "FOURTH"]
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+
+                                        }
+                                    ]
+                                }
+                            }
                         }
                     ]
                 }
