@@ -93,17 +93,7 @@
                                                                                                         },
                                                                                                         {
                                                                                                             "name": "curriculumLevel",
-                                                                                                            "type": {
-                                                                                                                "type": "enum",
-                                                                                                                "name": "CurriculumLevel",
-                                                                                                                "symbols": [
-                                                                                                                    "EARLY",
-                                                                                                                    "FIRST",
-                                                                                                                    "SECOND",
-                                                                                                                    "THIRD",
-                                                                                                                    "FOURTH"
-                                                                                                                ]
-                                                                                                            }
+                                                                                                            "type": "io.sudostream.timetoteach.messages.CurriculumLevel"
                                                                                                         }
                                                                                                     ]
                                                                                                 }
