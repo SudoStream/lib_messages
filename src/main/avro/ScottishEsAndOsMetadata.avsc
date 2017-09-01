@@ -40,22 +40,27 @@
         },
         {
             "name": "eAndOSetName",
-            "type": {
-                "type": "enum",
-                "name": "EAndOSetName",
-                "symbols": [
-                    "LANGUAGES__CLASSICAL_LANGUAGES",
-                    "LANGUAGES__GAELIC_LEARNERS",
-                    "LANGUAGES__LITERACY_AND_ENGLISH",
-                    "LANGUAGES__LITERACY_AND_GAIDHLIG",
-                    "LANGUAGES__MODERN_LANGUAGES",
-                    "RELIGIOUS_AND_MORAL_EDUCATION",
-                    "RELIGIOUS_EDUCATION_IN_ROMAN_CATHOLIC_SCHOOLS"
-                ]
+            "type": [
+                "null",
+                {
+                    "type": "enum",
+                    "name": "EAndOSetName",
+                    "symbols": [
+                        "LANGUAGES__CLASSICAL_LANGUAGES",
+                        "LANGUAGES__GAELIC_LEARNERS",
+                        "LANGUAGES__LITERACY_AND_ENGLISH",
+                        "LANGUAGES__LITERACY_AND_GAIDHLIG",
+                        "LANGUAGES__MODERN_LANGUAGES",
+                        "RELIGIOUS_AND_MORAL_EDUCATION",
+                        "RELIGIOUS_EDUCATION_IN_ROMAN_CATHOLIC_SCHOOLS"
+                    ]
 
-            }
+                }
+
+            ]
+
         },
         {"name": "eAndOSetSectionName", "type": "string"},
-        {"name": "eAndOSetSubSectionName", "type": "string"}
+        {"name": "eAndOSetSubSectionName", "type": ["null", "string"]}
     ]
 }

@@ -1,6 +1,5 @@
 package io.sudostream.timetoteach.messages
 
-
 import org.scalatest.FunSuite
 
 class ScottishEsAndOsDocumentTest extends FunSuite {
