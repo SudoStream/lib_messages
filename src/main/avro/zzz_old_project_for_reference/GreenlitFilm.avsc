@@ -1,7 +1,7 @@
 {
     "type": "record",
     "name": "GreenlitFilm",
-    "namespace": "io.sudostream.api_antagonist.messages",
+    "namespace": "io.sudostream.zzz_old_project_for_reference.api_antagonist.messages",
     "fields": [
         {"name": "filmTitle", "type": "string"},
         {
@@ -17,7 +17,7 @@
             }
         },
         {"name": "filmUuid", "type": "string"},
-        {"name": "speculativeScreenplay", "type": "io.sudostream.api_antagonist.messages.SpeculativeScreenplay"}
+        {"name": "speculativeScreenplay", "type": "io.sudostream.zzz_old_project_for_reference.api_antagonist.messages.SpeculativeScreenplay"}
     ]
 }
 

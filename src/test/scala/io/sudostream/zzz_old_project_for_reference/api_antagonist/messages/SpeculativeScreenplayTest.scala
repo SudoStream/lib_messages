@@ -1,4 +1,4 @@
-package io.sudostream.api_antagonist.messages
+package io.sudostream.zzz_old_project_for_reference.api_antagonist.messages
 
 import org.scalatest.FunSuite
 

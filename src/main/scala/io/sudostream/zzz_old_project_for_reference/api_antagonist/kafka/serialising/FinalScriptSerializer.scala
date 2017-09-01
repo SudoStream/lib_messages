@@ -1,9 +1,9 @@
-package io.sudostream.api_antagonist.kafka.serialising
+package io.sudostream.zzz_old_project_for_reference.api_antagonist.kafka.serialising
 
 import java.io.ByteArrayOutputStream
 import java.util
 
-import io.sudostream.api_antagonist.messages.FinalScript
+import io.sudostream.zzz_old_project_for_reference.api_antagonist.messages.FinalScript
 import org.apache.avro.io.{DatumWriter, EncoderFactory}
 import org.apache.avro.specific.SpecificDatumWriter
 import org.apache.kafka.common.serialization.Serializer
