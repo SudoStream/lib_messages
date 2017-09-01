@@ -3,7 +3,7 @@ package io.sudostream.timetoteach.kafka.serializing
 import java.io.{ByteArrayInputStream, InputStream}
 import java.util
 
-import io.sudostream.timetoteach.messages.ScottishEsAndOsDocument
+import io.sudostream.timetoteach.messages.scottish.ScottishEsAndOsDocument
 import org.apache.avro.io.DecoderFactory
 import org.apache.avro.specific.SpecificDatumReader
 import org.apache.kafka.common.serialization.Deserializer

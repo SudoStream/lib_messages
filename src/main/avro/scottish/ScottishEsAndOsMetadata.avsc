@@ -1,7 +1,7 @@
 {
     "type": "record",
     "name": "ScottishEsAndOsMetadata",
-    "namespace": "io.sudostream.timetoteach.messages",
+    "namespace": "io.sudostream.timetoteach.messages.scottish",
     "fields": [
         {
             "name": "codes",

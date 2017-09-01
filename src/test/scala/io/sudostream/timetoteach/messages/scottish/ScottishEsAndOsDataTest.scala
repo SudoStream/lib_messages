@@ -1,4 +1,4 @@
-package io.sudostream.timetoteach.messages
+package io.sudostream.timetoteach.messages.scottish
 
 import org.scalatest.FunSuite
 

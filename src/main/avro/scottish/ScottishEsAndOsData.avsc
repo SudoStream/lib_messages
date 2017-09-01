@@ -1,0 +1,11 @@
+{
+    "type": "record",
+    "name": "ScottishEsAndOsData",
+    "namespace": "io.sudostream.timetoteach.messages.scottish",
+    "fields": [
+        {
+            "name": "experiencesAndOutcomeMap",
+            "type": {"type": "map", "values": "io.sudostream.timetoteach.messages.scottish.ScottishEsAndOsMetadata"}
+        }
+    ]
+}

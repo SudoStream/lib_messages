@@ -1,7 +1,7 @@
 {
     "type": "record",
     "name": "ScottishEsAndOsDocument",
-    "namespace": "io.sudostream.timetoteach.messages",
+    "namespace": "io.sudostream.timetoteach.messages.scottish",
     "fields": [
         {
             "name": "introduction",
@@ -93,7 +93,7 @@
                                                                                                         },
                                                                                                         {
                                                                                                             "name": "curriculumLevel",
-                                                                                                            "type": "io.sudostream.timetoteach.messages.CurriculumLevel"
+                                                                                                            "type": "io.sudostream.timetoteach.messages.scottish.CurriculumLevel"
                                                                                                         }
                                                                                                     ]
                                                                                                 }
