@@ -4,7 +4,7 @@ import org.scalatest.FunSuite
 
 class ScottishEsAndOsDataTest extends FunSuite {
 
-  test("Basic ScottishEsAndOsDocumentTest") {
+  test("Basic ScottishEsAndOsDataTest") {
 
     val experienceAndOutcomeToMetadataMap: Map[String, ScottishEsAndOsMetadata] = Map(
 

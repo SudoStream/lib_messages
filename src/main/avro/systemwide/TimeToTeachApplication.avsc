@@ -1,0 +1,10 @@
+{
+    "type": "enum",
+    "name": "TimeToTeachApplication",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide",
+    "symbols": [
+        "TIMETOTEACH_UI",
+        "TEST_UNIT",
+        "OTHER"
+    ]
+}

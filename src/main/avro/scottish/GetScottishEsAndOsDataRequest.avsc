@@ -1,0 +1,11 @@
+{
+    "type": "record",
+    "name": "GetScottishEsAndOsDataRequest",
+    "namespace": "io.sudostream.timetoteach.messages.scottish",
+    "fields": [
+        {"name": "requestFingerprint", "type": "string"},
+        {"name": "requestingSystem", "type": "io.sudostream.timetoteach.messages.systemwide.TimeToTeachApplication"},
+        {"name": "requestingUsername", "type": "string"},
+        {"name": "originalTimeOfRequest", "type": "long",  "logicalType": "timestamp-millis"}
+    ]
+}

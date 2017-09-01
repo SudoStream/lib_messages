@@ -25,7 +25,7 @@ sbtavrohugger.SbtAvrohugger.specificAvroSettings
 resolvers += "Typesafe Repo" at "http://repo.typesafe.com/typesafe/releases/"
 
 libraryDependencies ++= Seq(
-  "org.apache.avro" % "avro" % "1.8.1",
+  "org.apache.avro" % "avro" % "1.8.2",
   "com.typesafe.akka" %% "akka-stream-kafka" % "0.13",
 
   // test
