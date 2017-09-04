@@ -17,7 +17,10 @@ class ScottishEsAndOsDataTest extends FunSuite {
           curriculumAreaName = CurriculumAreaName.EXPRESSIVE_ARTS,
           eAndOSetName = Option.empty,
           eAndOSetSectionName = "Participation in performances and presentations",
-          eAndOSetSubSectionName = Option.empty),
+          eAndOSetSubSectionName = Option.empty,
+          eAndOSetSubSectionAuxiliaryText = Option.empty,
+          responsibilityOfAllPractitioners = true
+        ),
 
       "I have used the skills I have developed in the expressive arts to contribute to a " +
         "public presentation/performance."
@@ -28,18 +31,24 @@ class ScottishEsAndOsDataTest extends FunSuite {
           curriculumAreaName = CurriculumAreaName.EXPRESSIVE_ARTS,
           eAndOSetName = Option.empty,
           eAndOSetSectionName = "Participation in performances and presentations",
-          eAndOSetSubSectionName = Option.empty),
+          eAndOSetSubSectionName = Option.empty,
+          eAndOSetSubSectionAuxiliaryText = Option.empty,
+          responsibilityOfAllPractitioners = true
+        ),
 
       "In everyday activity and play, I explore and make choices to develop my learning and interests. " +
         "I am encouraged to use and share my experiences."
-      ->
+        ->
         ScottishEsAndOsMetadata(
           codes = List("HWB 0-19a"),
           curriculumLevels = List(CurriculumLevel.EARLY),
           curriculumAreaName = CurriculumAreaName.HEALTH_AND_WELLBEING,
           eAndOSetName = Option.empty,
           eAndOSetSectionName = "Planning for choices and changes",
-          eAndOSetSubSectionName = Option.empty)
+          eAndOSetSubSectionName = Option.empty,
+          eAndOSetSubSectionAuxiliaryText = Option.empty,
+          responsibilityOfAllPractitioners = true
+        )
     )
 
     val esAndOsData = ScottishEsAndOsData(experienceAndOutcomeToMetadataMap)

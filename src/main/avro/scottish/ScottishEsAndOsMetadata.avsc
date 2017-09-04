@@ -61,6 +61,8 @@
 
         },
         {"name": "eAndOSetSectionName", "type": "string"},
-        {"name": "eAndOSetSubSectionName", "type": ["null", "string"]}
+        {"name": "eAndOSetSubSectionName", "type": ["null", "string"]},
+        {"name": "eAndOSetSubSectionAuxiliaryText", "type": ["null", "string"]},
+        {"name": "responsibilityOfAllPractitioners", "type": "boolean"}
     ]
 }
