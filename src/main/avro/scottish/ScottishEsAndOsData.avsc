@@ -17,7 +17,7 @@
                             "type": {
                                 "type": "array", "items": {
                                     "type": "record",
-                                    "name": "ScottishEAndO",
+                                    "name": "ScottishExperienceAndOutcome",
                                     "fields": [
                                         {
                                             "name": "sentence", "type": "string"
@@ -47,7 +47,7 @@
                             "type": {
                                 "type": "array", "items": {
                                     "type": "enum",
-                                    "name": "CurriculumLevel",
+                                    "name": "ScottishCurriculumLevel",
                                     "symbols": ["EARLY", "FIRST", "SECOND", "THIRD", "FOURTH"]
                                 }
                             }
@@ -56,7 +56,7 @@
                             "name": "curriculumAreaName",
                             "type": {
                                 "type": "enum",
-                                "name": "CurriculumAreaName",
+                                "name": "ScottishCurriculumAreaName",
                                 "symbols": [
                                     "EXPRESSIVE_ARTS",
                                     "HEALTH_AND_WELLBEING",
@@ -75,7 +75,7 @@
                                 "null",
                                 {
                                     "type": "enum",
-                                    "name": "EAndOSetName",
+                                    "name": "ScottishEAndOSetName",
                                     "symbols": [
                                         "LANGUAGES__CLASSICAL_LANGUAGES",
                                         "LANGUAGES__GAELIC_LEARNERS",
