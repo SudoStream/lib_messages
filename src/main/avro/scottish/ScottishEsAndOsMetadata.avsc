@@ -1,8 +1,30 @@
 {
     "type": "record",
-    "name": "ScottishEsAndOsMetadata",
+    "name": "ScottishEsAndOsMetadata_OLD",
     "namespace": "io.sudostream.timetoteach.messages.scottish",
     "fields": [
+        {
+            "name": "experienceAndOutcome",
+            "type": {
+                "type": "array", "items": {
+                    "type": "record",
+                    "name": "ScottishEAndO",
+                    "fields": [
+                        {
+                            "name": "sentence", "type": "string"
+                        },
+                        {
+                            "name": "bulletPoints",
+                            "type": {
+                                "type": "array", "items": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
         {
             "name": "codes",
             "type": {

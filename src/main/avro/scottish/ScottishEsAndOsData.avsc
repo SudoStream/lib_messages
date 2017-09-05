@@ -4,8 +4,101 @@
     "namespace": "io.sudostream.timetoteach.messages.scottish",
     "fields": [
         {
-            "name": "experiencesAndOutcomeMap",
-            "type": {"type": "map", "values": "io.sudostream.timetoteach.messages.scottish.ScottishEsAndOsMetadata"}
+            "name": "allExperiencesAndOutcomes",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "ScottishEsAndOsMetadata",
+                    "namespace": "io.sudostream.timetoteach.messages.scottish",
+                    "fields": [
+                        {
+                            "name": "experienceAndOutcome",
+                            "type": {
+                                "type": "array", "items": {
+                                    "type": "record",
+                                    "name": "ScottishEAndO",
+                                    "fields": [
+                                        {
+                                            "name": "sentence", "type": "string"
+                                        },
+                                        {
+                                            "name": "bulletPoints",
+                                            "type": {
+                                                "type": "array", "items": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "codes",
+                            "type": {
+                                "type": "array", "items": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        {
+                            "name": "curriculumLevels",
+                            "type": {
+                                "type": "array", "items": {
+                                    "type": "enum",
+                                    "name": "CurriculumLevel",
+                                    "symbols": ["EARLY", "FIRST", "SECOND", "THIRD", "FOURTH"]
+                                }
+                            }
+                        },
+                        {
+                            "name": "curriculumAreaName",
+                            "type": {
+                                "type": "enum",
+                                "name": "CurriculumAreaName",
+                                "symbols": [
+                                    "EXPRESSIVE_ARTS",
+                                    "HEALTH_AND_WELLBEING",
+                                    "LANGUAGES",
+                                    "MATHEMATICS",
+                                    "RELIGION_AND_MORAL_EDUCATION",
+                                    "SCIENCES",
+                                    "SOCIAL_STUDIES",
+                                    "TECHNOLOGIES"
+                                ]
+                            }
+                        },
+                        {
+                            "name": "eAndOSetName",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "enum",
+                                    "name": "EAndOSetName",
+                                    "symbols": [
+                                        "LANGUAGES__CLASSICAL_LANGUAGES",
+                                        "LANGUAGES__GAELIC_LEARNERS",
+                                        "LANGUAGES__LITERACY_AND_ENGLISH",
+                                        "LANGUAGES__LITERACY_AND_GAIDHLIG",
+                                        "LANGUAGES__MODERN_LANGUAGES",
+                                        "RELIGIOUS_AND_MORAL_EDUCATION",
+                                        "RELIGIOUS_EDUCATION_IN_ROMAN_CATHOLIC_SCHOOLS"
+                                    ]
+
+                                }
+
+                            ]
+
+                        },
+                        {"name": "eAndOSetSectionName", "type": "string"},
+                        {"name": "eAndOSetSubSectionName", "type": ["null", "string"]},
+                        {"name": "eAndOSetSubSectionAuxiliaryText", "type": ["null", "string"]},
+                        {"name": "responsibilityOfAllPractitioners", "type": "boolean"}
+                    ]
+                }
+
+            }
         }
     ]
 }
