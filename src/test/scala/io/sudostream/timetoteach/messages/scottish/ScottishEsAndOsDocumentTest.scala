@@ -32,11 +32,11 @@ class ScottishEsAndOsDocumentTest extends FunSuite {
     val feelingsStatement = ExperienceAndOutcomeStatement(
       eAndOText = "I am aware of and able to express my feelings and am developing the ability to talk about them.",
       stage = List(
-        CurriculumCodeAndLevel(curriculumLevel = CurriculumLevel.EARLY, eAndOCode = "HWB 0-01a"),
-        CurriculumCodeAndLevel(curriculumLevel = CurriculumLevel.FIRST, eAndOCode = "HWB 1-01a"),
-        CurriculumCodeAndLevel(curriculumLevel = CurriculumLevel.SECOND, eAndOCode = "HWB 2-01a"),
-        CurriculumCodeAndLevel(curriculumLevel = CurriculumLevel.THIRD, eAndOCode = "HWB 3-01a"),
-        CurriculumCodeAndLevel(curriculumLevel = CurriculumLevel.FOURTH, eAndOCode = "HWB 4-01a")
+        CurriculumCodeAndLevel(curriculumLevel = "EARLY", eAndOCode = "HWB 0-01a"),
+        CurriculumCodeAndLevel(curriculumLevel = "FIRST", eAndOCode = "HWB 1-01a"),
+        CurriculumCodeAndLevel(curriculumLevel = "SECOND", eAndOCode = "HWB 2-01a"),
+        CurriculumCodeAndLevel(curriculumLevel = "THIRD", eAndOCode = "HWB 3-01a"),
+        CurriculumCodeAndLevel(curriculumLevel = "FOURTH", eAndOCode = "HWB 4-01a")
       )
     )
 
@@ -44,11 +44,11 @@ class ScottishEsAndOsDocumentTest extends FunSuite {
       eAndOText = "I know that we all experience a variety of thoughts and emotions that affect" +
         " how we feel and behave and I am learning ways of managing them.",
       stage = List(
-        CurriculumCodeAndLevel(curriculumLevel = CurriculumLevel.EARLY, eAndOCode = "HWB 0-02a"),
-        CurriculumCodeAndLevel(curriculumLevel = CurriculumLevel.FIRST, eAndOCode = "HWB 1-02a"),
-        CurriculumCodeAndLevel(curriculumLevel = CurriculumLevel.SECOND, eAndOCode = "HWB 2-02a"),
-        CurriculumCodeAndLevel(curriculumLevel = CurriculumLevel.THIRD, eAndOCode = "HWB 3-02a"),
-        CurriculumCodeAndLevel(curriculumLevel = CurriculumLevel.FOURTH, eAndOCode = "HWB 4-02a")
+        CurriculumCodeAndLevel(curriculumLevel = "EARLY", eAndOCode = "HWB 0-02a"),
+        CurriculumCodeAndLevel(curriculumLevel = "FIRST", eAndOCode = "HWB 1-02a"),
+        CurriculumCodeAndLevel(curriculumLevel = "SECOND", eAndOCode = "HWB 2-02a"),
+        CurriculumCodeAndLevel(curriculumLevel = "THIRD", eAndOCode = "HWB 3-02a"),
+        CurriculumCodeAndLevel(curriculumLevel = "FOURTH", eAndOCode = "HWB 4-02a")
       )
     )
 

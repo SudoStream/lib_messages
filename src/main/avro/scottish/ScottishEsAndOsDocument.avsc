@@ -93,7 +93,7 @@
                                                                                                         },
                                                                                                         {
                                                                                                             "name": "curriculumLevel",
-                                                                                                            "type": "io.sudostream.timetoteach.messages.scottish.CurriculumLevel"
+                                                                                                            "type": "string"
                                                                                                         }
                                                                                                     ]
                                                                                                 }
