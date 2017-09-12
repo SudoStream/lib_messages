@@ -70,6 +70,8 @@ class ScottishEsAndOsDataTest extends FunSuite {
       (metadata) => metadata.eAndOSetSectionName == "Planning for choices and changes")
     assert(eAndOsSatisfyingFilter.size == 1)
 
+    println(esAndOsData.toString)
+
   }
 
 }

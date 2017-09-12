@@ -1,12 +1,13 @@
 {
     "type": "record",
-    "name": "GetScottishEsAndOsDataRequest",
-    "namespace": "io.sudostream.timetoteach.messages.scottish",
+    "name": "ScottishEsAndOsRequestedEvent",
+    "namespace": "io.sudostream.timetoteach.messages.events",
     "fields": [
         {"name": "requestFingerprint", "type": "string"},
         {"name": "requestingSystem", "type": "io.sudostream.timetoteach.messages.systemwide.TimeToTeachApplication"},
         {"name": "requestingSystemExtraInfo", "type": ["null", "string"]},
         {"name": "requestingUsername", "type": "string"},
-        {"name": "originalUTCTimeOfRequest", "type": "long", "logicalType": "timestamp-millis"}
+        {"name": "originalUTCTimeOfRequest", "type": "long",  "logicalType": "timestamp-millis"},
+        {"name": "processedUTCTime", "type": "long",  "logicalType": "timestamp-millis"}
     ]
 }

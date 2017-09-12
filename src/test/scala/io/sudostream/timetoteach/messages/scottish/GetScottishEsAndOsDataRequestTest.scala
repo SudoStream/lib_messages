@@ -13,6 +13,7 @@ class GetScottishEsAndOsDataRequestTest extends FunSuite {
       originalUTCTimeOfRequest = Instant.now().toEpochMilli,
       requestFingerprint = java.util.UUID.randomUUID().toString,
       requestingSystem = TimeToTeachApplication.TEST_UNIT,
+      requestingSystemExtraInfo = Option.empty,
       requestingUsername = "Andy"
     )
 
