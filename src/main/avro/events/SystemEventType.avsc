@@ -1,11 +1,9 @@
 {
     "type": "enum",
-    "name": "TimeToTeachApplication",
+    "name": "SystemEventType",
     "namespace": "io.sudostream.timetoteach.messages.systemwide",
     "symbols": [
-        "TIMETOTEACH_UI",
-        "HTTP",
-        "TEST_UNIT",
+        "SCOTTISH_ES_AND_OS_REQUESTED_EVENT",
         "OTHER"
     ]
 }

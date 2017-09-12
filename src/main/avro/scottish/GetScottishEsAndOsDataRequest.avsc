@@ -6,7 +6,7 @@
         {"name": "requestFingerprint", "type": "string"},
         {"name": "requestingSystem", "type": "io.sudostream.timetoteach.messages.systemwide.TimeToTeachApplication"},
         {"name": "requestingSystemExtraInfo", "type": ["null", "string"]},
-        {"name": "requestingUsername", "type": "string"},
+        {"name": "requestingUsername", "type": ["null", "string"]},
         {"name": "originalUTCTimeOfRequest", "type": "long", "logicalType": "timestamp-millis"}
     ]
 }

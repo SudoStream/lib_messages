@@ -14,11 +14,11 @@ class GetScottishEsAndOsDataRequestTest extends FunSuite {
       requestFingerprint = java.util.UUID.randomUUID().toString,
       requestingSystem = TimeToTeachApplication.TEST_UNIT,
       requestingSystemExtraInfo = Option.empty,
-      requestingUsername = "Andy"
+      requestingUsername = Some("Andy")
     )
 
     println("Request looks like:-\n" + request)
-    assert(request.requestingUsername == "Andy")
+    assert(request.requestingUsername.getOrElse("Nope") == "Andy")
     val timestamp = Instant.ofEpochMilli(request.originalUTCTimeOfRequest).atZone(ZoneId.of("UTC")).toLocalDateTime
     println("Time of request was " + timestamp + " UTC")
   }
