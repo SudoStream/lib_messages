@@ -25,5 +25,3 @@ class GetScottishEsAndOsDataRequestDeserializer extends Deserializer[GetScottish
 
 }
 
-
-}
