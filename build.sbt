@@ -1,6 +1,6 @@
 name := """messages"""
-organization := "io.sudostream.api-antagonist"
-version := "0.0.8"
+organization := "io.sudostream.timetoteach"
+version := "0.0.9"
 
 scalaVersion := "2.11.7"
 ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true)}
