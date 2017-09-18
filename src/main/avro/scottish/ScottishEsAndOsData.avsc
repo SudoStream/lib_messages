@@ -65,7 +65,9 @@
                                     "RELIGION_AND_MORAL_EDUCATION",
                                     "SCIENCES",
                                     "SOCIAL_STUDIES",
-                                    "TECHNOLOGIES"
+                                    "TECHNOLOGIES",
+                                    "LITERACY",
+                                    "NUMERACY"
                                 ]
                             }
                         },
