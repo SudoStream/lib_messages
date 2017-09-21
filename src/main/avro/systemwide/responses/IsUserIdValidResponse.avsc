@@ -1,0 +1,11 @@
+{
+    "type": "record",
+    "name": "IsUserIdValidResponse",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.responses",
+    "fields": [
+        {"name": "timeToTeachUserId", "type": "string"},
+        {"name": "isValid", "type": "boolean"},
+        {"name": "requestFingerprint", "type": "string"},
+        {"name": "originalUTCTimeOfRequest", "type": "long", "logicalType": "timestamp-millis"}
+    ]
+}

@@ -4,6 +4,7 @@
     "namespace": "io.sudostream.timetoteach.messages.systemwide",
     "symbols": [
         "SCOTTISH_ES_AND_OS_REQUESTED_EVENT",
+        "IS_USER_ID_VALID_REQUEST",
         "OTHER"
     ]
 }
