@@ -1,0 +1,18 @@
+{
+    "type": "enum",
+    "name": "LocalAuthority",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
+    "symbols": [
+        "SCOTLAND__ABERDEEN_CITY",
+        "SCOTLAND__ABERDEENSHIRE",
+        "SCOTLAND__ANGUS",
+        "SCOTLAND__ARGYLL_AND_BUTE",
+        "SCOTLAND__EDINBURGH_CITY",
+        "SCOTLAND__CLACKMANNANSHIRE",
+        "SCOTLAND__DUMFRIES_AND_GALLOWAY",
+        "SCOTLAND__DUNDEE_CITY",
+        "SCOTLAND__EAST_AYRSHIRE",
+        "SCOTLAND__STIRLING",
+        "SCOTLAND__GLASGOW"
+    ]
+}

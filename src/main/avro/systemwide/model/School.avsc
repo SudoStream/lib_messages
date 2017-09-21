@@ -1,0 +1,14 @@
+{
+    "type": "record",
+    "name": "School",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
+    "fields": [
+        {"name": "id", "type": "string"},
+        {"name": "name", "type": "string"},
+        {"name": "address", "type": "string"},
+        {"name": "postCode", "type": "string"},
+        {"name": "telephone", "type": "string"},
+        {"name": "localAuthority", "type": "io.sudostream.timetoteach.messages.systemwide.model.LocalAuthority"},
+        {"name": "country", "type": "io.sudostream.timetoteach.messages.systemwide.model.Country"}
+    ]
+}

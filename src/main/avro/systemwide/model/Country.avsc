@@ -1,0 +1,12 @@
+{
+    "type": "enum",
+    "name": "Country",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
+    "symbols": [
+        "EIRE",
+        "ENGLAND",
+        "NORTHERN_IRELAND",
+        "SCOTLAND",
+        "WALES"
+    ]
+}

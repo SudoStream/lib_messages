@@ -1,0 +1,44 @@
+{
+    "type": "record",
+    "name": "User",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
+    "fields": [
+        {"name": "timeToTeachId", "type": "string"},
+        {"name": "fullName", "type": "string"},
+        {"name": "givenName", "type": ["null", "string"]},
+        {"name": "familyName", "type": ["null", "string"]},
+        {"name": "imageUrl", "type": ["null", "string"]},
+        {
+            "name": "emails",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "EmailDetails",
+                    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
+                    "fields": [
+                        {"name": "emailAddress", "type": "string"},
+                        {"name": "validated", "type": "boolean"},
+                        {"name": "preferred", "type": "boolean"}
+                    ]
+                }
+
+            }
+        },
+        {"name": "userRole", "type": "io.sudostream.timetoteach.messages.systemwide.model.UserRole"},
+        {
+            "name": "schools",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "SchoolWrapper",
+                    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
+                    "fields": [
+                        {"name": "school", "type": "io.sudostream.timetoteach.messages.systemwide.model.School"}
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "type": "enum",
+    "name": "UserRole",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
+    "symbols": [
+        "TEACHER",
+        "ADMIN",
+        "OTHER"
+    ]
+}
