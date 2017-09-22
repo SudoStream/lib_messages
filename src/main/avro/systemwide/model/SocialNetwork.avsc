@@ -1,0 +1,11 @@
+{
+    "type": "enum",
+    "name": "SocialNetwork",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
+    "symbols": [
+        "FACEBOOK",
+        "GOOGLE",
+        "TWITTER",
+        "OTHER"
+    ]
+}

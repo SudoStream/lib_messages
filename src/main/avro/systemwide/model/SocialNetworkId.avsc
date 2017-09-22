@@ -1,0 +1,9 @@
+{
+    "type": "record",
+    "name": "SocialNetworkId",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
+    "fields": [
+        {"name": "socialNetwork", "type": "io.sudostream.timetoteach.messages.systemwide.model.SocialNetwork"},
+        {"name": "id", "type": "string"}
+    ]
+}
