@@ -1,6 +1,6 @@
 name := """messages"""
 organization := "io.sudostream.timetoteach"
-version := "0.0.11-8"
+version := "0.0.11-9"
 
 scalaVersion := "2.11.7"
 ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true)}
@@ -26,7 +26,7 @@ resolvers += "Typesafe Repo" at "http://repo.typesafe.com/typesafe/releases/"
 
 libraryDependencies ++= Seq(
   "org.apache.avro" % "avro" % "1.8.2",
-  "com.typesafe.akka" %% "akka-stream-kafka" % "0.13",
+  "com.typesafe.akka" %% "akka-stream-kafka" % "0.17",
 
   // test
   "org.scalatest" %% "scalatest" % "2.2.4" % "test"
