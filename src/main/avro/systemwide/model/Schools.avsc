@@ -1,0 +1,24 @@
+{
+    "type": "record",
+    "name": "Schools",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
+    "fields": [
+        {
+            "name": "schools",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "SingleSchoolWrapper",
+                    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
+                    "fields": [
+                        {
+                            "name": "school",
+                            "type": "io.sudostream.timetoteach.messages.systemwide.model.School"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
