@@ -3,6 +3,7 @@
     "name": "LocalAuthority",
     "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
     "symbols": [
+        "UNKNOWN",
         "SCOTLAND__ABERDEEN_CITY",
         "SCOTLAND__ABERDEENSHIRE",
         "SCOTLAND__ANGUS",
