@@ -3,6 +3,9 @@
     "name": "Country",
     "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
     "symbols": [
+        "UNKNOWN",
+        "OTHER",
+
         "EIRE",
         "ENGLAND",
         "NORTHERN_IRELAND",

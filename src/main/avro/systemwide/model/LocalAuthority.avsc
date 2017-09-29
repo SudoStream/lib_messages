@@ -4,6 +4,8 @@
     "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
     "symbols": [
         "UNKNOWN",
+        "OTHER",
+
         "SCOTLAND__ABERDEEN_CITY",
         "SCOTLAND__ABERDEENSHIRE",
         "SCOTLAND__ANGUS",
