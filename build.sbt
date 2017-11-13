@@ -5,6 +5,8 @@ version := "0.0.11-15"
 scalaVersion := "2.11.7"
 ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true)}
 
+publishTo := Some(Resolver.file("file",  new File( "/home/andy/.ivy2/local" )) )
+
 scalacOptions ++= Seq(
   "-unchecked",
   "-deprecation",
