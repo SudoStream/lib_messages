@@ -1,0 +1,10 @@
+{
+    "type": "record",
+    "name": "CurriculumLevel",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
+    "fields": [
+        {"name": "country", "type": "io.sudostream.timetoteach.messages.systemwide.model.Country"},
+
+        {"name": "scottishCurriculumLevel", "type": ["null","io.sudostream.timetoteach.messages.scottish.ScottishCurriculumLevel"]}
+    ]
+}
