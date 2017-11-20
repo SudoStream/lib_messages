@@ -1,6 +1,6 @@
 name := """messages"""
 organization := "io.sudostream.timetoteach"
-version := "0.0.11-16"
+version := "0.0.11-17"
 
 scalaVersion := "2.11.7"
 ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true)}
@@ -17,7 +17,6 @@ scalacOptions ++= Seq(
   "-language:postfixOps",
   "-Ywarn-dead-code",
   "-Ywarn-infer-any",
-  "-Ywarn-unused-import",
   "-Xfatal-warnings",
   "-Xlint",
   "-encoding", "utf8")

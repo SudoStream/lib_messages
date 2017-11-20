@@ -1,0 +1,8 @@
+{
+    "type": "enum",
+    "name": "ScottishCurriculumLevel",
+    "namespace": "io.sudostream.timetoteach.messages.scottish",
+    "symbols": [
+        "EARLY", "FIRST", "SECOND", "THIRD", "FOURTH"
+    ]
+}

@@ -44,13 +44,7 @@
                         },
                         {
                             "name": "curriculumLevels",
-                            "type": {
-                                "type": "array", "items": {
-                                    "type": "enum",
-                                    "name": "ScottishCurriculumLevel",
-                                    "symbols": ["EARLY", "FIRST", "SECOND", "THIRD", "FOURTH"]
-                                }
-                            }
+                            "type": "io.sudostream.timetoteach.messages.scottish.ScottishCurriculumLevel"
                         },
                         {
                             "name": "curriculumAreaName",

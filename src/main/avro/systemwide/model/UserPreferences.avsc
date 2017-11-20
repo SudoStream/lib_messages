@@ -1,0 +1,58 @@
+{
+    "type": "record",
+    "name": "UserPreferences",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
+    "fields": [
+        {
+            "name": "AllSchoolTimes",
+            "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "SchoolTimes",
+                    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
+                    "fields": [
+                        {"name": "schoolId", "type": "string"},
+                        {"name": "schoolStartTime", "type": "string"},
+                        {"name": "morningBreakStartTime", "type": "string"},
+                        {"name": "morningBreakEndTime", "type": "string"},
+                        {"name": "lunchStartTime", "type": "string"},
+                        {"name": "lunchEndTime", "type": "string"},
+                        {"name": "schoolEndTime", "type": "string"}
+                    ]
+                }
+            },
+            "name": "AllSchoolCasses",
+            "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "SchoolClass",
+                    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
+                    "fields": [
+                        {"name": "schoolId", "type": "string"},
+                        {"name": "className", "type": "string"},
+                        {
+                            "name": "curriculumLevels",
+                            "type" : {
+                                "type": "array", "items" : {
+                                    "type": "record",
+                                    "name" : "CurriculumLevelWrapper",
+                                    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
+                                    "fields": [
+                                        {
+                                            "name": "curriculumLevel",
+                                            "type": "io.sudostream.timetoteach.messages.systemwide.model.CurriculumLevel"
+                                        }
+                                        ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

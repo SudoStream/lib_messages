@@ -55,6 +55,7 @@
                     ]
                 }
             }
-        }
+        },
+        {"name": "userPreferences", "type": ["null","io.sudostream.timetoteach.messages.systemwide.model.UserPreferences"]}
     ]
 }
