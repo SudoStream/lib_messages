@@ -44,7 +44,19 @@
                         },
                         {
                             "name": "curriculumLevels",
-                            "type": "io.sudostream.timetoteach.messages.scottish.ScottishCurriculumLevel"
+                            "type": {
+                                "type": "array", "items": {
+                                    "type": "record",
+                                    "name": "ScottishCurriculumLevelWrapper",
+                                    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
+                                    "fields": [
+                                        {
+                                            "name": "scottishCurriculumLevel",
+                                            "type": "io.sudostream.timetoteach.messages.scottish.ScottishCurriculumLevel"
+                                        }
+                                    ]
+                                }
+                            }
                         },
                         {
                             "name": "curriculumAreaName",

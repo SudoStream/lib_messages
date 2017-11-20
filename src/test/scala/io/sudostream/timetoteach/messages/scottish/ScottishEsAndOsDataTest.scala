@@ -1,5 +1,6 @@
 package io.sudostream.timetoteach.messages.scottish
 
+import io.sudostream.timetoteach.messages.systemwide.model.ScottishCurriculumLevelWrapper
 import org.scalatest.FunSuite
 
 class ScottishEsAndOsDataTest extends FunSuite {
@@ -16,7 +17,11 @@ class ScottishEsAndOsDataTest extends FunSuite {
           )
         ),
         codes = List("EXA 0-01a", "EXA 1-01a", "EXA 2-01a"),
-        curriculumLevels = List(ScottishCurriculumLevel.EARLY, ScottishCurriculumLevel.FIRST, ScottishCurriculumLevel.SECOND),
+        curriculumLevels = List(
+          ScottishCurriculumLevelWrapper(ScottishCurriculumLevel.EARLY),
+          ScottishCurriculumLevelWrapper(ScottishCurriculumLevel.FIRST),
+            ScottishCurriculumLevelWrapper(ScottishCurriculumLevel.SECOND)
+        ),
         curriculumAreaName = ScottishCurriculumAreaName.EXPRESSIVE_ARTS,
         eAndOSetName = Option.empty,
         eAndOSetSectionName = "Participation in performances and presentations",
@@ -33,7 +38,9 @@ class ScottishEsAndOsDataTest extends FunSuite {
           )
         ),
         codes = List("EXA 3-01a"),
-        curriculumLevels = List(ScottishCurriculumLevel.THIRD),
+        curriculumLevels = List(
+          ScottishCurriculumLevelWrapper(ScottishCurriculumLevel.THIRD)
+        ),
         curriculumAreaName = ScottishCurriculumAreaName.EXPRESSIVE_ARTS,
         eAndOSetName = Option.empty,
         eAndOSetSectionName = "Participation in performances and presentations",
@@ -50,7 +57,9 @@ class ScottishEsAndOsDataTest extends FunSuite {
           )
         ),
         codes = List("HWB 0-19a"),
-        curriculumLevels = List(ScottishCurriculumLevel.EARLY),
+        curriculumLevels = List(
+          ScottishCurriculumLevelWrapper(ScottishCurriculumLevel.EARLY)
+        ),
         curriculumAreaName = ScottishCurriculumAreaName.HEALTH_AND_WELLBEING,
         eAndOSetName = Option.empty,
         eAndOSetSectionName = "Planning for choices and changes",
