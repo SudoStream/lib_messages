@@ -30,7 +30,6 @@
                                     "name": "SchoolClass",
                                     "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
                                     "fields": [
-                                        {"name": "schoolId", "type": "string"},
                                         {"name": "className", "type": "string"},
                                         {
                                             "name": "curriculumLevels",
