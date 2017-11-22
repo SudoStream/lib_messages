@@ -22,7 +22,9 @@
                         {"name": "schoolEndTime", "type": "string"}
                     ]
                 }
-            },
+            }
+        },
+        {
             "name": "AllSchoolCasses",
             "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
             "type": {
@@ -36,17 +38,17 @@
                         {"name": "className", "type": "string"},
                         {
                             "name": "curriculumLevels",
-                            "type" : {
-                                "type": "array", "items" : {
+                            "type": {
+                                "type": "array", "items": {
                                     "type": "record",
-                                    "name" : "CurriculumLevelWrapper",
+                                    "name": "CurriculumLevelWrapper",
                                     "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
                                     "fields": [
                                         {
                                             "name": "curriculumLevel",
                                             "type": "io.sudostream.timetoteach.messages.systemwide.model.CurriculumLevel"
                                         }
-                                        ]
+                                    ]
                                 }
                             }
                         }
