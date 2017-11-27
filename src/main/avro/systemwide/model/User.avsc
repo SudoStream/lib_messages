@@ -26,6 +26,17 @@
         {"name": "familyName", "type": ["null", "string"]},
         {"name": "imageUrl", "type": ["null", "string"]},
         {
+            "name": "userAccountCreated",
+            "type": {
+                "type": "record",
+                "name": "userAccountCreatedDetails",
+                "fields": [
+                    {"name" : "dateSignedUp_Iso8601", "type" : "string"},
+                    {"name" : "timeSignedUp_Iso8601", "type" : "string"}
+                ]
+            }
+        },
+        {
             "name": "emails",
             "type": {
                 "type": "array",
@@ -56,6 +67,9 @@
                 }
             }
         },
-        {"name": "userPreferences", "type": ["null","io.sudostream.timetoteach.messages.systemwide.model.UserPreferences"]}
+        {
+            "name": "userPreferences",
+            "type": ["null", "io.sudostream.timetoteach.messages.systemwide.model.UserPreferences"]
+        }
     ]
 }
