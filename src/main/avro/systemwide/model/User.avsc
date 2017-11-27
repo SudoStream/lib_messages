@@ -29,7 +29,7 @@
             "name": "userAccountCreated",
             "type": {
                 "type": "record",
-                "name": "userAccountCreatedDetails",
+                "name": "UserAccountCreatedDetails",
                 "fields": [
                     {"name" : "dateSignedUp_Iso8601", "type" : "string"},
                     {"name" : "timeSignedUp_Iso8601", "type" : "string"}
