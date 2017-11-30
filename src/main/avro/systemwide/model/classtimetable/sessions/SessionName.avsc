@@ -1,0 +1,8 @@
+{
+    "type": "record",
+    "name": "SessionName",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.sessions",
+    "fields": [
+        {"name": "sessionName", "type": "string"}
+    ]
+}

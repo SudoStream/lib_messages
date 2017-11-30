@@ -1,0 +1,28 @@
+{
+    "type": "enum",
+    "name": "SubjectName",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.subjectdetail",
+    "symbols": [
+        "ART",
+        "ASSEMBLY",
+        "EMPTY",
+        "DRAMA",
+        "GOLDEN_TIME",
+        "HEALTH",
+        "ICT",
+        "MATHS",
+        "MUSIC",
+        "NUMERACY",
+        "OTHER",
+        "READING",
+        "PHYSICAL_EDUCATION",
+        "RME",
+        "SOFT_START",
+        "SPELLING",
+        "TEACHER_COVERTIME",
+        "TOPIC",
+        "WRITING"
+    ]
+}
+
+

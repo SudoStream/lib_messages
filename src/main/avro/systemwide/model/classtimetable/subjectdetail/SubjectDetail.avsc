@@ -1,0 +1,11 @@
+{
+    "type": "record",
+    "name": "SubjectDetail",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.subjectdetail",
+    "fields": [
+        {"name": "subjectName", "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.subjectdetail.SubjectName"},
+        {"name": "startTime", "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.time.StartTime"},
+        {"name": "endTime", "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.time.EndTime"},
+        {"name": "additionalInfo", "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.subjectdetail.SubjectDetailAdditionalInfo"}
+    ]
+}

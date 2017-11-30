@@ -1,0 +1,12 @@
+{
+    "type": "enum",
+    "name": "DayOfTheWeek",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.time",
+    "symbols": [
+        "MONDAY",
+        "TUESDAY",
+        "WEDNESDAY",
+        "THURSDAY",
+        "FRIDAY"
+    ]
+}

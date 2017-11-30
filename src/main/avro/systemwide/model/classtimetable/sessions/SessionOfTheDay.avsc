@@ -1,0 +1,28 @@
+{
+    "type": "record",
+    "name": "SessionOfTheDay",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.sessions",
+    "fields": [
+        {"name": "sessionName", "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.sessions.SessionName"},
+        {"name": "dayOfTheWeek", "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.time.DayOfTheWeek"},
+        {"name": "startTime", "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.time.StartTime"},
+        {"name": "endTime", "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.time.EndTime"},
+        {
+            "name": "subjects",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "SubjectDetailWrapper",
+                    "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.subjectdetail",
+                    "fields": [
+                        {
+                            "name": "subjectDetail",
+                            "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.subjectdetail.SubjectDetail"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

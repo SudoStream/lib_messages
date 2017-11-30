@@ -1,0 +1,28 @@
+{
+    "type": "record",
+    "name": "ClassTimetable",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable",
+    "fields": [
+        {
+            "name": "schoolTimes",
+            "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.time.ClassTimetableSchoolTimes"
+        },
+        {
+            "name": "allSessionsOfTheWeek",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "SessionOfTheDayWrapper",
+                    "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.sessions",
+                    "fields": [
+                        {
+                            "name": "school",
+                            "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.sessions.SessionOfTheDay"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

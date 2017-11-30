@@ -1,0 +1,23 @@
+{
+    "type": "record",
+    "name": "SessionBoundary",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.sessions",
+    "fields": [
+        {
+            "name": "sessionBoundaryName",
+            "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.sessions.SessionBoundaryName"
+        },
+        {
+            "name": "boundaryStartTime",
+            "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.time.StartTime"
+        },
+        {
+            "name": "boundaryType",
+            "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.sessions.SessionBoundaryType"
+        },
+        {
+            "name": "sessionName",
+            "type": ["null", "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.sessions.SessionName"]
+        }
+    ]
+}

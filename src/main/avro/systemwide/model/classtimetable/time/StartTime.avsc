@@ -1,0 +1,23 @@
+{
+    "type": "record",
+    "name": "StartTime",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.time",
+    "fields": [
+        {
+            "name": "hoursIn24Format",
+            "type": {
+                "type": "string",
+                "logicalType": "validated-string",
+                "pattern": "^\\d\\d$"
+            }
+        },
+        {
+            "name": "minutes",
+            "type": {
+                "type": "string",
+                "logicalType": "validated-string",
+                "pattern": "^\\d\\d$"
+            }
+        }
+    ]
+}

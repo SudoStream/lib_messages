@@ -1,0 +1,9 @@
+{
+    "type": "enum",
+    "name": "SessionBoundaryType",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.sessions",
+    "symbols": [
+        "START_OF_TEACHING_SESSION",
+        "END_OF_TEACHING_SESSION"
+    ]
+}

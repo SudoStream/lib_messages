@@ -1,0 +1,24 @@
+{
+    "type": "record",
+    "name": "ClassTimetableSchoolTimes",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.time",
+    "fields": [
+        {
+            "name": "schoolSessionBoundaries",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "SessionBoundaryWrapper",
+                    "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.sessions",
+                    "fields": [
+                        {
+                            "name": "sessionBoundary",
+                            "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.sessions.SessionBoundary"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
