@@ -18,36 +18,36 @@ class ClassTimetableTest extends FunSuite {
     SessionOfTheDayWrapper(SessionOfTheDay(
       sessionName = SessionName("EarlyMorningSession"),
       dayOfTheWeek = DayOfTheWeek.MONDAY,
-      startTime = StartTime("09", "00"),
-      endTime = EndTime("10", "30"),
+      startTime = StartTime("09:00"),
+      endTime = EndTime("10:30"),
       subjects = List(SubjectDetailWrapper(SubjectDetail(
         SubjectName.EMPTY,
-        StartTime("09", "00"),
-        EndTime("10", "30"),
+        StartTime("09:00"),
+        EndTime("10:30"),
         SubjectDetailAdditionalInfo("")
       )))
     )) ::
       SessionOfTheDayWrapper(SessionOfTheDay(
         sessionName = SessionName("LateMorningSession"),
         dayOfTheWeek = DayOfTheWeek.MONDAY,
-        startTime = StartTime("10", "45"),
-        endTime = EndTime("12", "05"),
+        startTime = StartTime("10:45"),
+        endTime = EndTime("12:05"),
         subjects = List(SubjectDetailWrapper(SubjectDetail(
           SubjectName.EMPTY,
-          StartTime("10", "45"),
-          EndTime("12", "05"),
+          StartTime("10:45"),
+          EndTime("12:05"),
           SubjectDetailAdditionalInfo("")
         )))
       )) ::
       SessionOfTheDayWrapper(SessionOfTheDay(
         sessionName = SessionName("AfternoonSession"),
         dayOfTheWeek = DayOfTheWeek.MONDAY,
-        startTime = StartTime("13", "00"),
-        endTime = EndTime("15", "00"),
+        startTime = StartTime("13:00"),
+        endTime = EndTime("15:00"),
         subjects = List(SubjectDetailWrapper(SubjectDetail(
           SubjectName.EMPTY,
-          StartTime("13", "00"),
-          EndTime("15", "00"),
+          StartTime("13:00"),
+          EndTime("15:00"),
           SubjectDetailAdditionalInfo("")
         )))
       )) :: Nil
@@ -56,37 +56,37 @@ class ClassTimetableTest extends FunSuite {
   def createSessionBoundaries(): List[SessionBoundaryWrapper] = {
     SessionBoundaryWrapper(SessionBoundary(
       sessionBoundaryName = SessionBoundaryName("SchoolStarts"),
-      boundaryStartTime = StartTime("09", "00"),
+      boundaryStartTime = StartTime("09:00"),
       boundaryType = SessionBoundaryType.START_OF_TEACHING_SESSION,
       sessionName = Some(SessionName("EarlyMorningSession"))
     )) ::
       SessionBoundaryWrapper(SessionBoundary(
         sessionBoundaryName = SessionBoundaryName("MorningBreakStarts"),
-        boundaryStartTime = StartTime("10", "30"),
+        boundaryStartTime = StartTime("10:30"),
         boundaryType = SessionBoundaryType.END_OF_TEACHING_SESSION,
         sessionName = None)
       ) ::
       SessionBoundaryWrapper(SessionBoundary(
         sessionBoundaryName = SessionBoundaryName("MorningBreakEnds"),
-        boundaryStartTime = StartTime("10", "45"),
+        boundaryStartTime = StartTime("10:45"),
         boundaryType = SessionBoundaryType.START_OF_TEACHING_SESSION,
         sessionName = Some(SessionName("LateMorningSession"))
       )) ::
       SessionBoundaryWrapper(SessionBoundary(
         sessionBoundaryName = SessionBoundaryName("LunchStarts"),
-        boundaryStartTime = StartTime("12", "05"),
+        boundaryStartTime = StartTime("12:05"),
         boundaryType = SessionBoundaryType.END_OF_TEACHING_SESSION,
         sessionName = None)
       ) ::
       SessionBoundaryWrapper(SessionBoundary(
         sessionBoundaryName = SessionBoundaryName("LunchEnds"),
-        boundaryStartTime = StartTime("13", "00"),
+        boundaryStartTime = StartTime("13:00"),
         boundaryType = SessionBoundaryType.START_OF_TEACHING_SESSION,
         sessionName = Some(SessionName("AfternoonSession"))
       )) ::
       SessionBoundaryWrapper(SessionBoundary(
         sessionBoundaryName = SessionBoundaryName("SchoolEnds"),
-        boundaryStartTime = StartTime("15", "00"),
+        boundaryStartTime = StartTime("15:00"),
         boundaryType = SessionBoundaryType.END_OF_TEACHING_SESSION,
         sessionName = None)
       ) :: Nil

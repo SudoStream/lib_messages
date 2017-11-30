@@ -3,21 +3,6 @@
     "name": "EndTime",
     "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.time",
     "fields": [
-        {
-            "name": "hoursIn24Format",
-            "type": {
-                "type": "string",
-                "logicalType": "validated-string",
-                "pattern": "^\\d\\d$"
-            }
-        },
-        {
-            "name": "minutes",
-            "type": {
-                "type": "string",
-                "logicalType": "validated-string",
-                "pattern": "^\\d\\d$"
-            }
-        }
+        {"name": "timeIso8601", "type": "string"}
     ]
 }
