@@ -3,6 +3,6 @@
     "name": "SubjectDetailAdditionalInfo",
     "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.subjectdetail",
     "fields": [
-        {"name": "additionalInfo", "type": "string"}
+        {"name": "value", "type": "string"}
     ]
 }
