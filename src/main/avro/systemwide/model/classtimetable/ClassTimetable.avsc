@@ -17,7 +17,7 @@
                     "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.sessions",
                     "fields": [
                         {
-                            "name": "school",
+                            "name": "sessionOfTheDay",
                             "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.sessions.SessionOfTheDay"
                         }
                     ]
