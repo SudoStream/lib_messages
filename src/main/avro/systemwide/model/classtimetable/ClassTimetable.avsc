@@ -3,6 +3,7 @@
     "name": "ClassTimetable",
     "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable",
     "fields": [
+        {"name": "timeToTeachId", "type": "string"},
         {
             "name": "schoolTimes",
             "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.time.ClassTimetableSchoolTimes"

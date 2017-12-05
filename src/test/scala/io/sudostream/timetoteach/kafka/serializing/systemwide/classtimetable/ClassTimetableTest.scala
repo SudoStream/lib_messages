@@ -106,6 +106,7 @@ class ClassTimetableTest extends FunSuite {
     val theAllSessionsOfTheWeek: List[SessionOfTheDayWrapper] = createAllSessionsOfTheWeek()
 
     val timetable: ClassTimetable = ClassTimetable(
+      "1234",
       schoolTimes = theSchoolTimes,
       allSessionsOfTheWeek = theAllSessionsOfTheWeek
     )
