@@ -1,0 +1,8 @@
+{
+    "type": "record",
+    "name": "TimeToTeachId",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable",
+    "fields": [
+        {"name": "value", "type": "string"}
+    ]
+}
