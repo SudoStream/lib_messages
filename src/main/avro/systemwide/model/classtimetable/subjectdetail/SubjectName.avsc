@@ -21,7 +21,11 @@
         "SPELLING",
         "TEACHER_COVERTIME",
         "TOPIC",
-        "WRITING"
+        "WRITING",
+        "PLAY",
+        "MODERN_LANGUAGES",
+        "SCIENCE",
+        "HAND_WRITING"
     ]
 }
 
