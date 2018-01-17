@@ -1,0 +1,26 @@
+{
+    "type": "record",
+    "name": "ClassDetails",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classes",
+    "fields": [
+        {"name": "classId", "type": "io.sudostream.timetoteach.messages.systemwide.model.classes.ClassId"},
+        {"name": "className", "type": "io.sudostream.timetoteach.messages.systemwide.model.classes.ClassName"},
+        {
+            "name": "classGroups",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "ClassGroupsWrapper",
+                    "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classes",
+                    "fields": [
+                        {
+                            "name": "group",
+                            "type": "io.sudostream.timetoteach.messages.systemwide.model.classes.ClassGroup"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

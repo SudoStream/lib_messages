@@ -1,0 +1,10 @@
+{
+    "type": "enum",
+    "name": "GroupType",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classes",
+    "symbols": [
+        "MATHS",
+        "LITERACY",
+        "OTHER"
+    ]
+}
