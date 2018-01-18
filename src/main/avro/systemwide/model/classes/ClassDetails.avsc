@@ -6,7 +6,7 @@
         {"name": "classId", "type": "io.sudostream.timetoteach.messages.systemwide.model.classes.ClassId"},
         {"name": "className", "type": "io.sudostream.timetoteach.messages.systemwide.model.classes.ClassName"},
         {
-            "name": "teacherWithWriteAccess",
+            "name": "teachersWithWriteAccess",
             "type": {
                 "type": "array", "items": {
                     "type": "string"
