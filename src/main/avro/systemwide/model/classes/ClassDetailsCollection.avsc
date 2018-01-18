@@ -1,0 +1,24 @@
+{
+    "type": "record",
+    "name": "ClassDetailsCollection",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classes",
+    "fields": [
+        {
+            "name": "values",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "SingleClassDetailsWrapper",
+                    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
+                    "fields": [
+                        {
+                            "name": "school",
+                            "type": "io.sudostream.timetoteach.messages.systemwide.model.classes.ClassDetails"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
