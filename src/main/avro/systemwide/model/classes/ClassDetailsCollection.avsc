@@ -13,7 +13,7 @@
                     "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
                     "fields": [
                         {
-                            "name": "school",
+                            "name": "classDetails",
                             "type": "io.sudostream.timetoteach.messages.systemwide.model.classes.ClassDetails"
                         }
                     ]
