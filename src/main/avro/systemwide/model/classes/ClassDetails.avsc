@@ -4,7 +4,9 @@
     "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classes",
     "fields": [
         {"name": "classId", "type": "io.sudostream.timetoteach.messages.systemwide.model.classes.ClassId"},
+        {"name": "schoolId", "type": "io.sudostream.timetoteach.messages.systemwide.model.classes.SchoolId"},
         {"name": "className", "type": "io.sudostream.timetoteach.messages.systemwide.model.classes.ClassName"},
+        {"name": "classDescription", "type": "io.sudostream.timetoteach.messages.systemwide.model.classes.ClassDescription"},
         {
             "name": "teachersWithWriteAccess",
             "type": {
@@ -13,7 +15,6 @@
                 }
             }
         },
-        {"name": "classDescription", "type": "string"},
         {
             "name": "classGroups",
             "type": {

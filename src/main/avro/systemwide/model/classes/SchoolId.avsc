@@ -1,0 +1,8 @@
+{
+    "type": "record",
+    "name": "SchoolId",
+    "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classes",
+    "fields": [
+        {"name": "value", "type": "string"}
+    ]
+}
