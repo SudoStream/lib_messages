@@ -5,6 +5,7 @@
     "fields": [
         {"name": "groupId", "type": "io.sudostream.timetoteach.messages.systemwide.model.classes.GroupId"},
         {"name": "groupName", "type": "io.sudostream.timetoteach.messages.systemwide.model.classes.GroupName"},
+        {"name": "groupDescription", "type": "string"},
         {"name": "groupType", "type": "io.sudostream.timetoteach.messages.systemwide.model.classes.GroupType"},
         {"name": "groupLevel", "type": "io.sudostream.timetoteach.messages.scottish.ScottishCurriculumLevel"}
     ]
