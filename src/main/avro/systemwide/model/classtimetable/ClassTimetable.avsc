@@ -4,7 +4,7 @@
     "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable",
     "fields": [
         {"name": "timeToTeachId", "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.TimeToTeachId"},
-        {"name": "className", "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.ClassName"},
+        {"name": "classId", "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.ClassId"},
         {
             "name": "schoolTimes",
             "type": "io.sudostream.timetoteach.messages.systemwide.model.classtimetable.time.ClassTimetableSchoolTimes"
