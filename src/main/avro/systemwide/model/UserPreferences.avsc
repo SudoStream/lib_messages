@@ -19,38 +19,7 @@
                         {"name": "morningBreakEndTime", "type": "string"},
                         {"name": "lunchStartTime", "type": "string"},
                         {"name": "lunchEndTime", "type": "string"},
-                        {"name": "schoolEndTime", "type": "string"},
-                        {
-                            "name": "userTeachesTheseClasses",
-                            "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
-                            "type": {
-                                "type": "array",
-                                "items": {
-                                    "type": "record",
-                                    "name": "SchoolClass",
-                                    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
-                                    "fields": [
-                                        {"name": "className", "type": "string"},
-                                        {
-                                            "name": "curriculumLevels",
-                                            "type": {
-                                                "type": "array", "items": {
-                                                    "type": "record",
-                                                    "name": "CurriculumLevelWrapper",
-                                                    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
-                                                    "fields": [
-                                                        {
-                                                            "name": "curriculumLevel",
-                                                            "type": "io.sudostream.timetoteach.messages.systemwide.model.CurriculumLevel"
-                                                        }
-                                                    ]
-                                                }
-                                            }
-                                        }
-                                    ]
-                                }
-                            }
-                        }
+                        {"name": "schoolEndTime", "type": "string"}
                     ]
                 }
             }
