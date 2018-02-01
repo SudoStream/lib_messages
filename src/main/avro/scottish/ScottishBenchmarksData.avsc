@@ -1,0 +1,41 @@
+{
+    "type": "record",
+    "name": "ScottishBenchmarksData",
+    "namespace": "io.sudostream.timetoteach.messages.scottish",
+    "fields": [
+        {
+            "name": "allBenchmarks",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "ScottishBenchmarksWrapper",
+                    "namespace": "io.sudostream.timetoteach.messages.scottish",
+                    "fields": [
+                        {
+                            "name": "eandoCodes",
+                            "type": {
+                                "type": "array", "items": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        {
+                            "name": "level",
+                            "type": "io.sudostream.timetoteach.messages.scottish.ScottishCurriculumLevel"
+                        },
+                        {
+                            "name": "benchmarks",
+                            "type": {
+                                "type": "array", "items": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
+
