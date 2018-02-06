@@ -9,24 +9,38 @@
                 "type": "array",
                 "items": {
                     "type": "record",
-                    "name": "ScottishEsAndOsMetadata",
+                    "name": "ScottishEsAndOsBySubSection",
                     "namespace": "io.sudostream.timetoteach.messages.scottish",
                     "fields": [
                         {
-                            "name": "experienceAndOutcome",
+                            "name": "experienceAndOutcomes",
                             "type": {
                                 "type": "array", "items": {
                                     "type": "record",
-                                    "name": "ScottishExperienceAndOutcome",
+                                    "name": "SingleScottishExperienceAndOutcome",
                                     "fields": [
                                         {
-                                            "name": "sentence", "type": "string"
+                                            "name": "code", "type": "string"
                                         },
                                         {
-                                            "name": "bulletPoints",
+                                            "name": "eAndOLines",
                                             "type": {
                                                 "type": "array", "items": {
-                                                    "type": "string"
+                                                    "type": "record",
+                                                    "name": "ScottishExperienceAndOutcomeLine",
+                                                    "fields": [
+                                                        {
+                                                            "name": "sentence", "type": "string"
+                                                        },
+                                                        {
+                                                            "name": "bulletPoints",
+                                                            "type": {
+                                                                "type": "array", "items": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
                                                 }
                                             }
                                         }
@@ -35,26 +49,14 @@
                             }
                         },
                         {
-                            "name": "codes",
+                            "name": "scottishCurriculumLevel",
+                            "type": "io.sudostream.timetoteach.messages.scottish.ScottishCurriculumLevel"
+                        },
+                        {
+                            "name": "associatedBenchmarks",
                             "type": {
                                 "type": "array", "items": {
                                     "type": "string"
-                                }
-                            }
-                        },
-                        {
-                            "name": "curriculumLevels",
-                            "type": {
-                                "type": "array", "items": {
-                                    "type": "record",
-                                    "name": "ScottishCurriculumLevelWrapper",
-                                    "namespace": "io.sudostream.timetoteach.messages.systemwide.model",
-                                    "fields": [
-                                        {
-                                            "name": "scottishCurriculumLevel",
-                                            "type": "io.sudostream.timetoteach.messages.scottish.ScottishCurriculumLevel"
-                                        }
-                                    ]
                                 }
                             }
                         },
@@ -76,28 +78,6 @@
                                     "NUMERACY"
                                 ]
                             }
-                        },
-                        {
-                            "name": "eAndOSetName",
-                            "type": [
-                                "null",
-                                {
-                                    "type": "enum",
-                                    "name": "ScottishEAndOSetName",
-                                    "symbols": [
-                                        "LANGUAGES__CLASSICAL_LANGUAGES",
-                                        "LANGUAGES__GAELIC_LEARNERS",
-                                        "LANGUAGES__LITERACY_AND_ENGLISH",
-                                        "LANGUAGES__LITERACY_AND_GAIDHLIG",
-                                        "LANGUAGES__MODERN_LANGUAGES",
-                                        "RELIGIOUS_AND_MORAL_EDUCATION",
-                                        "RELIGIOUS_EDUCATION_IN_ROMAN_CATHOLIC_SCHOOLS"
-                                    ]
-
-                                }
-
-                            ]
-
                         },
                         {"name": "eAndOSetSectionName", "type": "string"},
                         {"name": "eAndOSetSubSectionName", "type": ["null", "string"]},
