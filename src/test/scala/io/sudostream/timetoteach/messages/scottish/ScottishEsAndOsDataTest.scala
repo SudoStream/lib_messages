@@ -8,7 +8,7 @@ class ScottishEsAndOsDataTest extends FunSuite {
 
     val experiencesAndOutcomes: List[ScottishEsAndOsBySubSection] = List(
       ScottishEsAndOsBySubSection(
-        experienceAndOutcomes = List(
+        allExperienceAndOutcomesAtTheSubSectionLevel = List(
           SingleScottishExperienceAndOutcome(
             code = "EXA 0-01a",
             eAndOLines = List(
@@ -29,7 +29,7 @@ class ScottishEsAndOsDataTest extends FunSuite {
         responsibilityOfAllPractitioners = true
       ),
       ScottishEsAndOsBySubSection(
-        experienceAndOutcomes = List(
+        allExperienceAndOutcomesAtTheSubSectionLevel = List(
           SingleScottishExperienceAndOutcome(
             code = "EXA 1-01a",
             eAndOLines = List(
@@ -49,7 +49,7 @@ class ScottishEsAndOsDataTest extends FunSuite {
         eAndOSetSubSectionAuxiliaryText = Option.empty,
         responsibilityOfAllPractitioners = true
       ),ScottishEsAndOsBySubSection(
-        experienceAndOutcomes = List(
+        allExperienceAndOutcomesAtTheSubSectionLevel = List(
           SingleScottishExperienceAndOutcome(
             code = "EXA 2-01a",
             eAndOLines = List(

@@ -13,7 +13,7 @@
                     "namespace": "io.sudostream.timetoteach.messages.scottish",
                     "fields": [
                         {
-                            "name": "experienceAndOutcomes",
+                            "name": "allExperienceAndOutcomesAtTheSubSectionLevel",
                             "type": {
                                 "type": "array", "items": {
                                     "type": "record",
