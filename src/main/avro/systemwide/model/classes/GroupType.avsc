@@ -4,7 +4,9 @@
     "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classes",
     "symbols": [
         "MATHS",
-        "LITERACY",
+        "READING",
+        "WRITING",
+        "SPELLING",
         "OTHER"
     ]
 }
