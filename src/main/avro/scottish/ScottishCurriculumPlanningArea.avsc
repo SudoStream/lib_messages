@@ -23,6 +23,7 @@
         "SOCIAL_STUDIES",
         "TECHNOLOGIES",
 
-        "TOPIC"
+        "TOPIC",
+        "NONE"
     ]
 }
