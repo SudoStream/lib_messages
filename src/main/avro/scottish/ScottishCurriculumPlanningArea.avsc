@@ -1,0 +1,26 @@
+{
+    "type": "enum",
+    "name": "ScottishCurriculumPlanningArea",
+    "namespace": "io.sudostream.timetoteach.messages.scottish",
+    "symbols": [
+        "EXPRESSIVE_ARTS",
+        "EXPRESSIVE_ARTS__ART",
+        "EXPRESSIVE_ARTS__DRAMA",
+        "EXPRESSIVE_ARTS__MUSIC",
+        "HEALTH_AND_WELLBEING",
+        "HEALTH_AND_WELLBEING__PHYSICAL_EDUCATION",
+        "LITERACY__WRITING",
+        "LITERACY__READING",
+        "LITERACY__CLASSICAL_LANGUAGES",
+        "LITERACY__GAELIC_LEARNERS",
+        "LITERACY__LITERACY_AND_ENGLISH",
+        "LITERACY__LITERACY_AND_GAIDLIG",
+        "LITERACY__MODERN_LANGUAGES",
+        "MATHEMATICS",
+        "RME__STANDARD",
+        "RME__CATHOLIC",
+        "SCIENCE",
+        "SOCIAL_STUDIES",
+        "TECHNOLOGIES"
+    ]
+}
