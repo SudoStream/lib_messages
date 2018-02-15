@@ -21,6 +21,8 @@
         "RME__CATHOLIC",
         "SCIENCE",
         "SOCIAL_STUDIES",
-        "TECHNOLOGIES"
+        "TECHNOLOGIES",
+
+        "TOPIC"
     ]
 }
