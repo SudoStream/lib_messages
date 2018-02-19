@@ -62,22 +62,7 @@
                         },
                         {
                             "name": "curriculumAreaName",
-                            "type": {
-                                "type": "enum",
-                                "name": "ScottishCurriculumAreaName",
-                                "symbols": [
-                                    "EXPRESSIVE_ARTS",
-                                    "HEALTH_AND_WELLBEING",
-                                    "LANGUAGES",
-                                    "MATHEMATICS",
-                                    "RELIGION_AND_MORAL_EDUCATION",
-                                    "SCIENCES",
-                                    "SOCIAL_STUDIES",
-                                    "TECHNOLOGIES",
-                                    "LITERACY",
-                                    "NUMERACY"
-                                ]
-                            }
+                            "type": "io.sudostream.timetoteach.messages.scottish.ScottishCurriculumPlanningArea"
                         },
                         {"name": "eAndOSetSectionName", "type": "string"},
                         {"name": "eAndOSetSubSectionName", "type": ["null", "string"]},
