@@ -3,7 +3,7 @@
     "name": "GroupType",
     "namespace": "io.sudostream.timetoteach.messages.systemwide.model.classes",
     "symbols": [
-        "MATHS",
+        "MATHEMATICS",
         "READING",
         "WRITING",
         "SPELLING",
